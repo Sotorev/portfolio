@@ -1,0 +1,24 @@
+.text-zone{
+    font-size: 3rem;
+    padding: 2rem 25rem;
+    line-height: 8rem;
+}
+.text-zone > h1{
+    margin: 0;
+}
+.intro{
+    height: 33vw;
+}
+.intro > p{
+    margin: 0;
+    padding: 1rem 25rem;
+    font-size: 1.7rem;
+    color: #8892b0;
+}
+p.slideInUp{
+    animation-timing-function: ease-out;
+    animation-name: fadeInUp;
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    animation-delay: 3.5s;
+}

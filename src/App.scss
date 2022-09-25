@@ -1,0 +1,31 @@
+
+body{
+  background-color: #041638;
+  color: white;
+  box-sizing: border-box;
+  font: 300 11px/1.4 'Helvetica Neue', sans-serif;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.text{
+    margin: 0;
+    font-size: 1.7rem;
+    color: #8892b0;
+}
+.section-title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+
+  &::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 1px;
+    margin: 0 10px;
+    background-color: #8892b0;
+  }
+}

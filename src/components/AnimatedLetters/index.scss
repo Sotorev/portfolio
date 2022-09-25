@@ -1,0 +1,29 @@
+.blast{
+    color: #ccd6f6;
+    display: inline-block;
+    min-width: 10px;
+    transition: all 300ms ease-out;
+}
+.bounce{
+    opacity: 0;
+    animation: bounceIn 1s 1s;
+    min-width: 10px;
+    
+}
+.blast:hover{
+    color: #05AFF2;
+}
+.animated{
+    animation-duration: 1s;
+    animation-fill-mode: both;
+}
+.rubberband{
+    animation-name: rubberBand;
+    
+
+}
+@for $i from 0 through 53{
+    .blast._#{$i}{
+        animation-delay: #{$i/10}s;
+    }
+}
