@@ -1,9 +1,10 @@
 .text-zone{
-    font-size: 3rem;
+    font-size: 9rem;
     padding: 2rem 25rem;
     line-height: 8rem;
 }
 .text-zone > h1{
+    font-size: clamp(1rem,6vw,11rem);
     margin: 0;
 }
 .intro{

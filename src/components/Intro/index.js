@@ -7,7 +7,7 @@ import './index.scss'
 const Intro = () => {
 
   const intro = Array.from("Hi,");
-  const name = Array.from("I'm Manuel Soto, ");
+  const name = Array.from("I'm Manuel, ");
   const rol = Array.from("software enginner.")
   const [letterClass, setLetterClass] = useState("blast animated bounce");
   const [isLoaded, setIsLoaded] = useState(false);
@@ -35,7 +35,7 @@ const Intro = () => {
             idx={8}
             isLoaded={isLoaded}
           />
-          {/* <br /> */}
+          <br />
           <AnimatedLetters
             letterClass={letterClass}
             strArray={rol}
