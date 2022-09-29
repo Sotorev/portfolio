@@ -20,10 +20,10 @@ function App() {
       <Navbar />
       <Leftside />
       <Rightside />
-      {/* <Intro />
+      <Intro />
       <About />
       <Experience/>
-      <Contact/> */}
+      <Contact/>
     </div>
   );
 }

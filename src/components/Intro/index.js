@@ -8,7 +8,7 @@ const Intro = () => {
 
   const intro = Array.from("Hi,");
   const name = Array.from("I'm Manuel, ");
-  const rol = Array.from("software enginner.")
+  const rol = Array.from("software engineer.")
   const [letterClass, setLetterClass] = useState("blast animated bounce");
   const [isLoaded, setIsLoaded] = useState(false);
 

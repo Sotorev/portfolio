@@ -57,3 +57,25 @@
 .fadeInUp{
   animation-name: fadeInUp;
 }
+@media only screen and (max-width:1200px) {
+  .about{
+    padding: 55rem 3rem;
+    .blast-section{
+      font-size: 2rem;
+    } 
+    .about-info{
+      display: block;
+      .about-text{
+        width: 100%;
+      }
+      .profile-pic{
+        transform: translate(-50%, 0);
+        width: 20rem;
+        position: relative;
+        left: 50%;
+        right: 0%;
+        
+      }
+    }
+  }
+}

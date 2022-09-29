@@ -1,25 +1,51 @@
-.text-zone{
-    font-size: 9rem;
-    padding: 2rem 25rem;
-    line-height: 8rem;
-}
-.text-zone > h1{
-    font-size: clamp(1rem,6vw,11rem);
+.text-zone {
+  padding: 2rem 25rem;
+  line-height: 8rem;
+
+  h1 {
+    font-size: clamp(1rem, 6vw, 11rem);
     margin: 0;
+  }
 }
-.intro{
-    height: 33vw;
+
+
+
+.intro {
+  height: 33vw;
 }
-.intro > p{
-    margin: 0;
-    padding: 1rem 25rem;
-    font-size: 1.7rem;
-    color: #8892b0;
+
+.intro>p {
+  margin: 0;
+  padding: 1rem 25rem;
+  font-size: 1.7rem;
+  color: #8892b0;
 }
-p.slideInUp{
-    animation-timing-function: ease-out;
-    animation-name: fadeInUp;
-    animation-duration: 1s;
-    animation-fill-mode: both;
-    animation-delay: 3.5s;
+
+p.slideInUp {
+  animation-timing-function: ease-out;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+  animation-delay: 3.5s;
+}
+
+@media only screen and (max-width: 1200px) {
+  .intro {
+    height: auto;
+    .text-zone {
+      padding: 17rem 3rem;
+      padding-bottom: 1rem;
+      line-height: 4rem;
+
+      h1 {
+        font-size: 4rem;
+        margin: 0;
+      }
+    }
+
+    p {
+      padding: 1rem 3rem;
+      font-size: 1.7rem;
+    }
+  }
 }
