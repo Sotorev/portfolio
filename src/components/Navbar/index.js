@@ -1,27 +1,42 @@
 import './index.scss'
-import logo from '../../assets/images/manrev.png'
+import logo from '../../assets/images/manrev.png';
+import { useState } from 'react';
+import menuIcon from '../../assets/images/menuicon.png';
 export default function Navbar() {
+  const [showNavBar, setShowNavBar] = useState(false);
   return (
-    <header className='nav-bar'>
-      <nav>
-        <a className='logo' href='/'>
-          <img src={logo} alt='manrev-logo' />
-        </a>
-        <ul>
-          <li className='text_animate _0'>
-            <a href='#about'>About</a>
-          </li>
-          <li className='text_animate _1'>
-            <a href='#experience'>Experience</a>
-          </li>
-          <li className='text_animate _2'>
-            <a href='#work'>Work</a>
-          </li>
-          <li className='text_animate _3'>
-            <a href='#contact'>Contact</a>
-          </li>
-        </ul>
-      </nav>
+    <header className={'nav-bar'}>
+      <a className='logo' href='/'>
+        <img src={logo} alt='manrev-logo' />
+      </a>
+
+      <div
+        className={showNavBar ? "opened-nav-menu" : "closed-nav-menu"}
+        onClick={() => setShowNavBar(!showNavBar)} 
+      >
+        <span/>
+        <span/>
+        <span/>
+      </div>
+      
+      <div className={showNavBar ? 'mobile-nav-bar' : 'hide-mobile-nav-bar'}>
+        <nav>
+          <ul>
+            <li className='text_animate _1'>
+              <a href='#about'>About</a>
+            </li>
+            <li className='text_animate _2'>
+              <a href='#experience'>Experience</a>
+            </li>
+            <li className='text_animate _3'>
+              <a href='#work'>Work</a>
+            </li>
+            <li className='text_animate _4'>
+              <a href='#contact'>Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   )
 }

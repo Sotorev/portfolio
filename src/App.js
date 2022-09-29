@@ -12,6 +12,7 @@ import AOS from "aos";
 import "aos/dist/aos.css"
 
 function App() {
+  const booleaTest = false;
   AOS.init({once:true})
   return (
     <div className="App">
@@ -19,10 +20,10 @@ function App() {
       <Navbar />
       <Leftside />
       <Rightside />
-      <Intro />
+      {/* <Intro />
       <About />
       <Experience/>
-      <Contact/>
+      <Contact/> */}
     </div>
   );
 }
