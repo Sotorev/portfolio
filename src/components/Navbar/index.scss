@@ -162,7 +162,7 @@ $text-color: rgb(228, 227, 227);
     }
 
     .mobile-nav-bar {
-      transition: all .5s ease;
+
       width: 100%;
       position: fixed;
       z-index: 1;
@@ -188,6 +188,8 @@ $text-color: rgb(228, 227, 227);
           padding: 0;
         }
       }
+
+      transition: all .5s ease;
     }
 
     .hide-mobile-nav-bar {

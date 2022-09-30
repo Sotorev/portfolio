@@ -1,8 +1,11 @@
 import "./index.scss";
 import AnimatedLetters from "../../components/AnimatedLetters";
-const Contact = () =>{
+import { useInView } from 'react-intersection-observer';
+const Contact = () => {
+
+	const [ref, inView, entry] = useInView({ threshold: 0, triggerOnce: true });
 	return(
-		<section className="contact" id="contact">
+		<section ref={ref} className={inView ? 'contact show' : 'contact hidden'} id="contact">
 			<div className="section-title">
 					<AnimatedLetters 
 						letterClass={'blast-section'}
@@ -10,8 +13,8 @@ const Contact = () =>{
 						strArray={Array.from("Contact")}
 						idx={0}
 					/>
-
 			</div>
+			<h2>Get in touch</h2>
 		</section>
 	)
 }

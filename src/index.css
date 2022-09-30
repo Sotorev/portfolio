@@ -24,3 +24,22 @@ code {
     display: none;
   }
 }
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #041638;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #055BA6;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #0476D9;
+}

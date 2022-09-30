@@ -11,11 +11,6 @@ const Side = () => {
         <li>
           <a href="https://github.com/Sotorev" aria-label="Github"
             target="_blank" rel="noreferrer"
-            onMouseEnter={(e) => {
-              if(e.target.className == 'A')
-                e.target.className = 'animated social'
-            }}
-            onAnimationEnd={(e) => e.target.className = ''}  
           >
             <IconGitHub />
           </a>
@@ -23,11 +18,6 @@ const Side = () => {
         <li>
           <a href="https://instagram.com/Sotorev" aria-label="Instagram"
             target="_blank" rel="noreferrer"
-            onMouseEnter={(e) => {
-              if(e.target.className == 'A')
-                e.target.className = 'animated social'
-            }}
-            onAnimationEnd={(e) => e.target.className = ''}  
           >
             <IconInstagram />
           </a>
@@ -35,11 +25,6 @@ const Side = () => {
         <li>
           <a href="https://www.linkedin.com/in/jos%C3%A9-soto-77a087248" aria-label="LinkedIn"
             target="_blank" rel="noreferrer"
-            onMouseEnter={(e) => {
-              if(e.target.className == 'A')
-                e.target.className = 'animated social'
-            }}
-            onAnimationEnd={(e) => e.target.className = ''}
             >
             <IconLinkedIn />
           </a>
@@ -47,11 +32,6 @@ const Side = () => {
         <li>
           <a href="https://twitter.com/sotoj7_" aria-label="Twitter"
             target="_blank" rel="noreferrer"
-            onMouseEnter={(e) => {
-              if(e.target.className == 'A')
-                e.target.className = 'animated social'
-            }}
-            onAnimationEnd={(e) => e.target.className = ''}
           >
             <IconTwitter />
           </a>

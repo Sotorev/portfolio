@@ -7,7 +7,8 @@ import Leftside from './components/Leftside';
 import Rightside from './components/Rightside';
 import About from './components/About';
 import Experience from './components/Experience';
-import Contact from './components/Contact'
+import Contact from './components/Contact';
+
 
 function App() {
   return (
@@ -17,9 +18,9 @@ function App() {
       <Leftside />
       <Rightside />
       <Intro />
-      <About />
+      <About  />
       <Experience/>
-      <Contact/>
+      <Contact />
     </div>
   );
 }

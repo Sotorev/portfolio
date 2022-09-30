@@ -29,3 +29,15 @@ body{
     background-color: #8892b0;
   }
 }
+.show{
+  transform: none;
+  opacity: 1;
+  transition: all 1s;
+  // animation: slideInUp 2s ease;
+}
+.hidden{
+  transform: translate(0, 100px);
+  opacity: 0;
+  transition: all 1s;
+  // animation: slideOutDown 2s ease;
+}

@@ -1,8 +1,10 @@
 import "./index.scss";
 import AnimatedLetters from "../AnimatedLetters";
+import { useInView } from 'react-intersection-observer';
 const Experience = () => {
+	const [ref, inView, entry] = useInView({ threshold: 0, triggerOnce: true });
 	return (
-		<section id="experience" className="experience">
+		<section ref={ref} id="experience" className={inView ? 'experience show' : 'experience hidden'}>
 			<div className="section-title">
 			<AnimatedLetters
           letterClass={'blast-section'}

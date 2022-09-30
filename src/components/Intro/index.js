@@ -45,8 +45,8 @@ const Intro = () => {
         </h1>
       </div>
       <p className='slideInUp'>
-        I'm a software engineer specializing in data science and building.
-        <br/>Currently, I'm focused on building accesible,human-centered
+        I'm a software engineer specializing in data science and building web apps.
+        <br/>Currently, I'm focused on building accesible, human-centered
         products at Lucrev.
       </p>
     </div>
