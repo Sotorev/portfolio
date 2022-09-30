@@ -2,7 +2,7 @@ import "./index.scss";
 import AnimatedLetters from "../../components/AnimatedLetters";
 const Contact = () =>{
 	return(
-		<section className="contact" id="contact" data-aos="fade-up">
+		<section className="contact" id="contact">
 			<div className="section-title">
 					<AnimatedLetters 
 						letterClass={'blast-section'}

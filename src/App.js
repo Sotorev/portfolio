@@ -8,12 +8,8 @@ import Rightside from './components/Rightside';
 import About from './components/About';
 import Experience from './components/Experience';
 import Contact from './components/Contact'
-import AOS from "aos";
-import "aos/dist/aos.css"
 
 function App() {
-  const booleaTest = false;
-  AOS.init({once:true})
   return (
     <div className="App">
 

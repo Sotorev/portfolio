@@ -4,7 +4,7 @@ import AnimatedLetters from '../AnimatedLetters';
 
 const About = () => {
   return (
-    <section className='about' id='about' data-aos="fade-up">
+    <section className='about' id='about'>
       <div className='section-title'>
         <AnimatedLetters
           letterClass={'blast-section'}
