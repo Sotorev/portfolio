@@ -31,7 +31,7 @@ const About = () => {
             Here are a few technologies I’ve been working with recently:
           </p>
           <ul>
-            <li>Javascript ES6+</li>
+            <li>Javascript (ES6+)</li>
             <li>React</li>
             <li>Python</li>
             <li>Django</li>
