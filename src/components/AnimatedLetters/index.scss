@@ -24,6 +24,6 @@
 }
 @for $i from 0 through 53{
     .blast._#{$i}{
-        animation-delay: #{$i/10}s;
+        animation-delay: #{$i/12}s;
     }
 }

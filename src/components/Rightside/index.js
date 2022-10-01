@@ -4,8 +4,8 @@ const RightSide = () => {
   return (
     <div className='right-side animate-sides'>
       <div className='column-mode'>
-        <a href='mailto:sotorev7@gmail.com'>
-          sotorev7@gmail.com
+        <a href='mailto:manrev@umes.edu.gt'>
+          manrev@umes.edu.gt
         </a>
       </div>
     </div>

@@ -16,7 +16,7 @@ const Intro = () => {
     setTimeout(() => {
           setIsLoaded(true);
           setLetterClass("blast")
-        }, 5000);
+        }, 4000);
   }, [])
   return (
     <div className='intro'>

@@ -6,13 +6,18 @@ const Experience = () => {
 	return (
 		<section ref={ref} id="experience" className={inView ? 'experience show' : 'experience hidden'}>
 			<div className="section-title">
-			<AnimatedLetters
-          letterClass={'blast-section'}
-          isLoaded={true}
-          strArray={Array.from("Experience")}
-          idx={0}
-        />
-			</div>
+				<AnimatedLetters
+					letterClass={'blast-section'}
+					isLoaded={true}
+					strArray={Array.from("Experience")}
+					idx={0}
+				/>
+      </div>
+      <div className="experience-content">
+        <ul>
+          <li>Free lancer Web developer 2021-2022</li>
+        </ul>
+      </div>
 		</section>
 	)
 }
