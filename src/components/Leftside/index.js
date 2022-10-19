@@ -16,7 +16,7 @@ const Side = () => {
           </a>
         </li>
         <li>
-          <a href="https://instagram.com/Sotorev" aria-label="Instagram"
+          <a href="https://instagram.com/sotoj7_" aria-label="Instagram"
             target="_blank" rel="noreferrer"
           >
             <IconInstagram />

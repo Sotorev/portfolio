@@ -11,7 +11,7 @@
 
 
 .intro {
-  height: 33vw;
+  height: 100vh;
 }
 
 .intro>p {
@@ -22,11 +22,11 @@
 }
 
 p.slideInUp {
-  animation-timing-function: ease-out;
+  animation-timing-function: cubic-bezier(0.165, 0.84, 0.44, 1);
   animation-name: fadeInUp;
   animation-duration: 1s;
   animation-fill-mode: both;
-  animation-delay: 3s;
+  animation-delay: 1.5s;
 }
 
 @media only screen and (max-width: 1200px) {
