@@ -16,7 +16,7 @@ const Intro = () => {
     setTimeout(() => {
           setIsLoaded(true);
           setLetterClass("blast")
-        }, 2000);
+        }, 3500);
   }, [])
   return (
     <div className='intro'>
@@ -32,14 +32,14 @@ const Intro = () => {
           <AnimatedLetters
             letterClass={letterClass}
             strArray={name}
-            idx={5}
+            idx={8}
             isLoaded={isLoaded}
           />
           <br />
           <AnimatedLetters
             letterClass={letterClass}
             strArray={rol}
-            idx={5}
+            idx={7 + name.length}
             isLoaded={isLoaded}
           />
         </h1>
