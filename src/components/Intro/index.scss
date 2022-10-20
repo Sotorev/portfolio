@@ -1,5 +1,5 @@
 .text-zone {
-  padding: 2rem 25rem;
+  padding: 2rem 40rem;
   line-height: 8rem;
 
   h1 {
@@ -11,12 +11,12 @@
 
 
 .intro {
-  height: 100vh;
+  min-height: 100vh;
 }
 
 .intro>p {
   margin: 0;
-  padding: 1rem 25rem;
+  padding: 1rem 40rem;
   font-size: 1.7rem;
   color: #8892b0;
 }

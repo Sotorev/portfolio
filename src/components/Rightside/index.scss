@@ -37,6 +37,6 @@
 }
 .animate-sides{
     opacity: 0;
-    animation: fadeInUp 1s .5s cubic-bezier(0.165, 0.84, 0.44, 1);
+    animation: fadeInUp 1s 1.5s cubic-bezier(0.165, 0.84, 0.44, 1);
     animation-fill-mode: forwards;
 }

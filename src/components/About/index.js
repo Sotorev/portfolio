@@ -38,9 +38,9 @@ const About = () => {
           </ul>
         </div>
 
-        <div className='profile-pic wrapper'>
+        {/* <div className='profile-pic wrapper'>
           <img src={imageProfile} alt='my-profile' />
-        </div>
+        </div> */}
       </div>
     </section>
   )

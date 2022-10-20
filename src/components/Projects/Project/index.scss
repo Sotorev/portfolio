@@ -1,0 +1,38 @@
+.project {
+	// position: relative;
+	width: 100%;
+	background-color: red;
+	margin-top: 10rem;
+	display: flex;
+	justify-content: center;
+	height: 300px;
+	
+	.project-image{
+		position: absolute;
+		z-index: -1;
+		cursor: pointer;
+			img {
+				aspect-ratio: 16/9;
+				object-fit: cover;
+				width: 40%;
+				}
+		}
+	.project-info{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-evenly;
+		font-size: clamp(1rem, 10vw, 2rem);
+		background-color: #18191d;
+		width: 100%;
+		h2{
+			margin-bottom: -4rem;
+		}
+		h2,p{
+			margin-left: 40%;
+			margin-right: 10%;
+			text-align: justify;
+
+		}
+		// align-self: flex-end;
+	}
+}

@@ -1,5 +1,3 @@
-import { useState } from 'react';
-import { useEffect } from 'react';
 import './index.scss'
 
 const AnimatedLetters = ({letterClass,strArray, idx, isLoaded }) => {
