@@ -20,7 +20,7 @@ const Projects = () => {
 				name={data.rm.name}
 				description={data.rm.description}
 				img={data.rm.image}
-				url={data.rm.href}
+				url={data.rm.url}
 			/>
 		</section>	
 	);

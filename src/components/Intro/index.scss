@@ -1,6 +1,8 @@
 .text-zone {
-  padding: 2rem 40rem;
+  padding: 2rem 150px;
   line-height: 8rem;
+  max-width: 1600px;
+  margin: auto;
 
   h1 {
     font-size: clamp(1rem, 6vw, 11rem);
@@ -12,11 +14,13 @@
 
 .intro {
   min-height: 100vh;
+  max-width: 1600px;
+  margin: auto;
 }
 
 .intro>p {
   margin: 0;
-  padding: 1rem 40rem;
+  padding: 1rem 150px;
   font-size: 1.7rem;
   color: #8892b0;
 }

@@ -1,7 +1,9 @@
 .about {
   // display: none;
+  max-width: 1600px;
   height: 90vh;
-  margin: 0rem 40rem;
+  margin: auto;
+  padding: 0 150px;
 
   .blast-section {
 		font-size: clamp(1rem, 2vw, 4rem);
