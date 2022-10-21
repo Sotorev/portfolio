@@ -1,8 +1,8 @@
 .experience {
-	padding: 2rem 150px;
+	padding: 100px 150px;
 	margin: auto;
 	max-width: 1600px;
-  height:50vh ;
+  min-height:60vh ;
 	.blast-section {
 		font-size: clamp(1rem, 2vw, 4rem);
 		font-weight: bold;
@@ -26,7 +26,8 @@
 @media only screen and (max-width:1200px) {
 
 	.experience {
-		margin: 2rem 3rem;
+		min-height: 0;
+		padding: 60px 3rem;
 
 		.blast-section {
 			font-size: 2rem;

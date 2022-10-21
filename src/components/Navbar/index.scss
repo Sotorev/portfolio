@@ -194,11 +194,10 @@ $text-color: rgb(228, 227, 227);
 
     .hide-mobile-nav-bar {
       transition: all .5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
-      transform: translate(0, -100%);
       width: 100%;
       position: fixed;
       z-index: 1;
-      top: 0;
+      top: -100%;
       height: 300px;
       background-color: black;
 

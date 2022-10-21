@@ -4,7 +4,7 @@ import './index.scss'
 
 
 
-const Intro = () => {
+const Hero = () => {
 
   const intro = Array.from("Hi,");
   const name = Array.from("I'm Manuel, ");
@@ -16,10 +16,10 @@ const Intro = () => {
     setTimeout(() => {
           setIsLoaded(true);
           setLetterClass("blast")
-        }, 3500);
+        }, 2500);
   }, [])
   return (
-    <div className='intro'>
+    <div className='hero'>
       <div className='text-zone'>
         <h1>
           <AnimatedLetters
@@ -45,11 +45,11 @@ const Intro = () => {
         </h1>
       </div>
       <p className='slideInUp'>
-        I'm a software engineer specializing in data science and building web apps.
+        I'm a software engineer specializing in building web apps.
         <br/>Currently, I'm focused on building accesible, human-centered
-        products at Lucrev.
+        products.
       </p>
     </div>
   )
 }
-export default Intro
+export default Hero

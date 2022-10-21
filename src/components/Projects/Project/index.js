@@ -1,7 +1,10 @@
+import { useInView } from 'react-intersection-observer';
 import './index.scss'
 const Project = ({ img, name, url, description }) => {
+	const [ref, inView, entry] = useInView();
+
 	return (
-		<article className="project">
+		<article ref={ref} className="project">
 			<div className="project-content">
 				<div>
 					<h2 className='project-title'>{name}</h2>
@@ -12,7 +15,7 @@ const Project = ({ img, name, url, description }) => {
 						<li>React</li>
 						<li>React Router</li>
 						<li>Styled Components</li>
-						<li>API</li>
+						<li>Serie API</li>
 					</ul>
 				</div>
 			</div>

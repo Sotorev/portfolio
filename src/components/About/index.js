@@ -7,9 +7,8 @@ import { useInView } from 'react-intersection-observer';
 const About = () => {
   const [ref, inView, entry] = useInView({ threshold: 0.3, triggerOnce: true});
   return (
-    <section ref={ref} className={inView ? 'about show' : 'about hidden'} id='about'>
-
-      <div className='section-title'>
+    <section ref={ref} className='about' id='about'>
+      <div className={inView ? 'section-title show' : 'section-title hidden'}>
         <AnimatedLetters
           letterClass={'blast-section'}
           isLoaded={true}
@@ -17,7 +16,7 @@ const About = () => {
           idx={0}
         />
       </div>
-      <div className='about-info'>
+      <div className={inView ? 'about-info show' : 'about-info hidden'}>
         <div className='text about-text'>
           <p >
             Hello!, My name is Manuel and I enjoy creating things

@@ -4,8 +4,8 @@ import { useInView } from 'react-intersection-observer';
 const Experience = () => {
 	const [ref, inView, entry] = useInView({ threshold: 0, triggerOnce: true });
 	return (
-		<section ref={ref} id="experience" className={inView ? 'experience show' : 'experience hidden'}>
-			<div className="section-title">
+		<section ref={ref} id="experience" className="experience">
+			<div className={inView ? 'section-title show' : 'section-title hidden'}>
 				<AnimatedLetters
 					letterClass={'blast-section'}
 					isLoaded={true}
@@ -13,7 +13,7 @@ const Experience = () => {
 					idx={0}
 				/>
       </div>
-      <div className="experience-content">
+			<div className={inView ? 'experience-content show' : 'experience-content hidden'}>
         <ul>
           <li>Free lancer Web developer 2021-2022</li>
         </ul>

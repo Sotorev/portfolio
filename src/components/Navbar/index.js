@@ -1,7 +1,6 @@
 import './index.scss'
 import logo from '../../assets/images/manrev.png';
 import { useState } from 'react';
-import menuIcon from '../../assets/images/menuicon.png';
 export default function Navbar() {
   const [showNavBar, setShowNavBar] = useState(false);
   return (
@@ -11,6 +10,7 @@ export default function Navbar() {
       </a>
 
       <div
+        //button nav
         className={showNavBar ? "opened-nav-menu" : "closed-nav-menu"}
         onClick={() => setShowNavBar(!showNavBar)} 
       >

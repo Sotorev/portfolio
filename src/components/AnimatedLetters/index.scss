@@ -6,7 +6,7 @@
 }
 .bounce{
     opacity: 0;
-    animation: bounceIn 1s 1s;
+    animation: bounceIn 1s;
     min-width: 10px;
     
 }
@@ -28,6 +28,7 @@
         animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
     }
 }
+//Make unselect elements
 .blast{
     // cursor: text;
     -webkit-user-select: none;

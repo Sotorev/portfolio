@@ -1,18 +1,17 @@
-import { useInView } from "react-intersection-observer";
 import AnimatedLetters from '../AnimatedLetters/'
 import './index.scss'
 import data from '../../projects-data'
 import Project from "./Project";
+import { useInView } from 'react-intersection-observer';
 const Projects = () => {
-	const [ref, inView, entry] = useInView()
-	console.log(Array.from("Some Things I’ve Built."))
+	const [ref, inView, entry] = useInView();
 	return (
 		<section ref={ref} className="projects-section" id="work">
-			<div className='section-title'>
+			<div className={inView ? "section-title show" : "section-title hidden"}>
 				<AnimatedLetters
 					letterClass={'blast-section'}
 					isLoaded={true}
-					strArray={Array.from("Some Things I’ve Built.")}
+					strArray={Array.from("SomeThingsI’veBuilt.")}
 					idx={0}
 				/>
 			</div>

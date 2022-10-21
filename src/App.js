@@ -2,7 +2,7 @@
 import './App.scss';
 
 import Navbar from './components/Navbar';
-import Intro from './components/Intro';
+import Hero from './components/Hero';
 import Leftside from './components/Leftside';
 import Rightside from './components/Rightside';
 import About from './components/About';
@@ -18,7 +18,7 @@ function App() {
       <Navbar />
       <Leftside />
       <Rightside />
-      <Intro />
+      <Hero />
       <About />
       <Experience/>
       <Projects/>

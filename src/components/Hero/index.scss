@@ -12,13 +12,13 @@
 
 
 
-.intro {
+.hero {
   min-height: 100vh;
   max-width: 1600px;
   margin: auto;
 }
 
-.intro>p {
+.hero>p {
   margin: 0;
   padding: 1rem 150px;
   font-size: 1.7rem;
@@ -34,7 +34,7 @@ p.slideInUp {
 }
 
 @media only screen and (max-width: 1200px) {
-  .intro {
+  .hero {
     height: auto;
     .text-zone {
       padding: 17rem 3rem;

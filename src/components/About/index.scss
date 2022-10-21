@@ -1,9 +1,9 @@
 .about {
   // display: none;
   max-width: 1600px;
-  height: 90vh;
+  min-height: 90vh;
   margin: auto;
-  padding: 0 150px;
+  padding: 100px 150px;
 
   .blast-section {
 		font-size: clamp(1rem, 2vw, 4rem);
@@ -73,7 +73,8 @@
 }
 @media only screen and (max-width:1200px) {
   .about{
-    margin: 55rem 3rem;
+    min-height: 0;
+    padding: 60px 3rem;
     .blast-section{
       font-size: 2rem;
     } 
