@@ -1,10 +1,24 @@
 import './index.scss'
 import logo from '../../assets/images/manrev.png';
 import { useState } from 'react';
+import useScrollDir from '../../hooks/useScrollDir';
 export default function Navbar() {
   const [showNavBar, setShowNavBar] = useState(false);
+  const scrollDir = useScrollDir();
+  let navClassName = "nav-bar";
+  if (scrollDir == "INITIAL") {
+    navClassName = "nav-bar";
+  }
+  else if (scrollDir == "UP") {
+    navClassName = "nav-bar show-nav-bar";
+  }
+  else {
+    navClassName = "nav-bar hide-nav-bar";
+  }
   return (
-    <header className={'nav-bar'}>
+    <header
+      className={navClassName}
+    >
       <a className='logo' href='/'>
         <img src={logo} alt='manrev-logo' />
       </a>

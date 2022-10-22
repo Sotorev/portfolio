@@ -2,7 +2,7 @@ import "./index.scss";
 import AnimatedLetters from "../AnimatedLetters";
 import { useInView } from 'react-intersection-observer';
 const Experience = () => {
-	const [ref, inView, entry] = useInView({ threshold: 0, triggerOnce: true });
+	const [ref, inView, entry] = useInView({ threshold: .3, triggerOnce: true });
 	return (
 		<section ref={ref} id="experience" className="experience">
 			<div className={inView ? 'section-title show' : 'section-title hidden'}>
