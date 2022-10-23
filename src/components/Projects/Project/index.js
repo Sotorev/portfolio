@@ -7,7 +7,7 @@ const Project = ({ img, name, url, description }) => {
 		<article ref={ref} className="project">
 			<div className="project-content">
 				<div>
-					<h2 className='project-title'>{name}</h2>
+					<a className='project-title' href={url} target="_blank">{name}</a>
 					<div className='project-description'>
 						<p>{description}</p>
 					</div>

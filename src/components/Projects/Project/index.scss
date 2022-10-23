@@ -12,12 +12,16 @@ $text-color: #ccd6f6;
 	.project-image{
 		position: relative;
 		z-index: 1;
+		border: 1px solid #05AFF2;
 		background-color: #05AFF2;
 		grid-area: 1 / 6 / -1 / -1;
 		border-radius: 10px;
-		overflow: hidden;
+		overflow: hidden; 
+		mix-blend-mode: screen;
+		transition: all 1s;
 		&:hover{
-			transition: all 1s;
+			mix-blend-mode: normal;
+			border: none;
 			background-color: transparent;
 		}
 		// grid-column: 1 / 8;
@@ -25,7 +29,6 @@ $text-color: #ccd6f6;
 			img {
 				mix-blend-mode: multiply;
 				filter: grayscale(100%) contrast(1) brightness(90%);
-				transition: all 1s;
 				&:hover{
 					filter: none;
 				}
@@ -42,11 +45,17 @@ $text-color: #ccd6f6;
 		// grid-column: 7 / -1;
 		color: $text-color;
 		.project-title{
-			// text-align: right;
+			display: block;
+			margin-bottom: 2rem;
+			color: #05AFF2;
+			font-size: 1.5em;
+			font-weight: bold;
+			text-decoration: none;
 		}
 		.project-description{
+			// margin-top: 2rem;
 			box-shadow: 0 10px 20px -15px rgba(2, 12, 27, .7);
-			transition: all .5s;
+			transition: all .3s;
 			// width: 80%;
 			border-radius: 5px;
 			background-color: #0b2458;
@@ -57,7 +66,7 @@ $text-color: #ccd6f6;
 				margin: 0;
 			}
 			&:hover{
-				box-shadow: 0 30px 20px -15px rgba(2, 12, 27, .7);
+				box-shadow: 0 20px 20px -15px rgba(2, 12, 27, .7);
 			}
 		}
 		.project-tech-list{
