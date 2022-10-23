@@ -4,17 +4,11 @@ import { useEffect, useState } from 'react';
 import useScrollDir from '../../hooks/useScrollDir';
 export default function Navbar() {
   const [showNavBar, setShowNavBar] = useState(false);
-  const [mobileMode, setMobileMode] = useState(false);
 
-  useEffect(() => {
-    if (window.screen.width <= 1200) {
-      setMobileMode(true);
-    }
-  },[])
 
   const scrollDir = useScrollDir();
   let navClassName = "nav-bar";
-  if (mobileMode || scrollDir === "INITIAL") {
+  if (scrollDir === "INITIAL") {
     navClassName = "nav-bar";
   }
   else if (scrollDir === "UP") {
@@ -35,14 +29,23 @@ export default function Navbar() {
       <div
         //button nav
         className={showNavBar ? "opened-nav-menu" : "closed-nav-menu"}
-        onClick={() => setShowNavBar(!showNavBar)} 
+        onClick={() => {
+          setShowNavBar(!showNavBar);
+          if(!showNavBar)
+          {
+            document.body.style.overflow = "hidden";
+          }
+          else {
+            document.body.style.overflow = "auto";
+          }
+        }} 
       >
         <span/>
         <span/>
         <span/>
       </div>
       
-      <div className={showNavBar ? 'mobile-nav-bar' : 'hide-mobile-nav-bar'}>
+      <div className={showNavBar ? 'mobile-nav-bar' : 'hide mobile-nav-bar'}>
         <nav>
           <ul>
             <li className='text_animate _1'>
