@@ -3,12 +3,12 @@ $text-color: rgb(228, 227, 227);
 .hide-nav-bar{
   box-shadow: 0 10px 30px -15px black;
   transform: translate(0, -70px);
-  transition: all .5s;
+  transition: all .5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
 }
 .show-nav-bar{
   z-index: 3;
   transform: none;
-  transition: all .5s;
+  transition: all .5s cubic-bezier(0.77, 0.2, 0.05, 1.0);
   backdrop-filter: blur(10px);
   box-shadow: 0 10px 30px -15px black;
 }

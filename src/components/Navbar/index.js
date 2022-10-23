@@ -1,20 +1,29 @@
 import './index.scss'
 import logo from '../../assets/images/manrev.png';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import useScrollDir from '../../hooks/useScrollDir';
 export default function Navbar() {
   const [showNavBar, setShowNavBar] = useState(false);
+  const [mobileMode, setMobileMode] = useState(false);
+
+  useEffect(() => {
+    if (window.screen.width <= 1200) {
+      setMobileMode(true);
+    }
+  },[])
+
   const scrollDir = useScrollDir();
   let navClassName = "nav-bar";
-  if (scrollDir == "INITIAL") {
+  if (mobileMode || scrollDir === "INITIAL") {
     navClassName = "nav-bar";
   }
-  else if (scrollDir == "UP") {
+  else if (scrollDir === "UP") {
     navClassName = "nav-bar show-nav-bar";
   }
   else {
     navClassName = "nav-bar hide-nav-bar";
   }
+
   return (
     <header
       className={navClassName}
