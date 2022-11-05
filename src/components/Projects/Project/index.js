@@ -1,8 +1,7 @@
 import { useInView } from 'react-intersection-observer';
 import './index.scss'
-const Project = ({ img, name, url, description }) => {
+const Project = ({ img, name, url, description, tools }) => {
 	const [ref, inView, entry] = useInView();
-
 	return (
 		<article ref={ref} className="project">
 			<div className="project-content">
@@ -12,10 +11,9 @@ const Project = ({ img, name, url, description }) => {
 						<p>{description}</p>
 					</div>
 					<ul className='project-tech-list'>
-						<li>React</li>
-						<li>React Router</li>
-						<li>Styled Components</li>
-						<li>Serie API</li>
+						{tools.map((tool, idx) => <li key={idx}> 
+							{tool}
+						</li>)}
 					</ul>
 				</div>
 			</div>

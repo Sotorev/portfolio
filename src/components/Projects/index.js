@@ -20,6 +20,7 @@ const Projects = () => {
 				description={data.rm.description}
 				img={data.rm.image}
 				url={data.rm.url}
+				tools={data.rm.buildingTools}
 			/>
 		</section>	
 	);
