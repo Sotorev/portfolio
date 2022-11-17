@@ -6,7 +6,7 @@
   padding: 100px 150px;
 
   .blast-section {
-		font-size: clamp(1rem, 2vw, 4rem);
+		font-size: clamp(2.5rem, 2vw, 4rem);
 		font-weight: bold;
 		transition: all 300ms ease-out;
 		&:hover{
@@ -75,9 +75,6 @@
   .about{
     min-height: 0;
     padding: 60px 3rem;
-    .blast-section{
-      font-size: 2rem;
-    } 
     .about-info{
       display: block;
       .about-text{

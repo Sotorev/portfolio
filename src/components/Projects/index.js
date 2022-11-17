@@ -4,7 +4,7 @@ import data from '../../projects-data'
 import Project from "./Project";
 import { useInView } from 'react-intersection-observer';
 const Projects = () => {
-	const [ref, inView, entry] = useInView();
+	const [ref, inView, entry] = useInView({ threshold: 0.3, triggerOnce: true });
 	return (
 		<section ref={ref} className="projects-section" id="work">
 			<div className={inView ? "section-title show" : "section-title hidden"}>

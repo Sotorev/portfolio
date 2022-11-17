@@ -4,7 +4,7 @@
 	max-width: 1600px;
   min-height:60vh ;
 	.blast-section {
-		font-size: clamp(1rem, 2vw, 4rem);
+		font-size: clamp(2.5rem, 2vw, 4rem);
 		font-weight: bold;
 		transition: all 300ms ease-out;
 
@@ -23,14 +23,11 @@
 	}
 }
 
-@media only screen and (max-width:1200px) {
+@media only screen and (max-width:800px) {
 
 	.experience {
 		min-height: 0;
 		padding: 60px 3rem;
 
-		.blast-section {
-			font-size: 2rem;
-		}
 	}
 }

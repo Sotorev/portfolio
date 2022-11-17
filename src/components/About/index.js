@@ -33,7 +33,7 @@ const About = () => {
             <li>Javascript (ES6+)</li>
             <li>React</li>
             <li>Python</li>
-            <li>Django</li>
+            {/* <li>Django</li> */}
           </ul>
         </div>
 
