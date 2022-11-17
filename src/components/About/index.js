@@ -1,21 +1,19 @@
 import './index.scss';
-import imageProfile from '../../assets/images/profile.jpg'
-import AnimatedLetters from '../AnimatedLetters';
 import { useInView } from 'react-intersection-observer';
+import SectionTitle from '../SectionTitle';
 
 
 const About = () => {
   const [ref, inView, entry] = useInView({ threshold: 0.3, triggerOnce: true});
   return (
     <section ref={ref} className='about' id='about'>
-      <div className={inView ? 'section-title show' : 'section-title hidden'}>
-        <AnimatedLetters
-          letterClass={'blast-section'}
-          isLoaded={true}
-          strArray={Array.from("About")}
-          idx={0}
+      
+      <div className={inView ? 'show' : 'hidden'}>
+        <SectionTitle
+          text="About"
         />
       </div>
+      
       <div className={inView ? 'about-info show' : 'about-info hidden'}>
         <div className='text about-text'>
           <p >

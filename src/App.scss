@@ -15,21 +15,6 @@ body{
     font-size: 1.7rem;
     color: #8892b0;
 }
-.section-title {
-  color: #ccd6f6;
-  margin: 0;
-  display: flex;
-  align-items: center;
-
-  &::after {
-    content: "";
-    display: block;
-    width: 400px;
-    height: 1px;
-    margin: 0 10px;
-    background-color: #8892b0;
-  }
-}
 .show{
   transform: none;
   opacity: 1;
@@ -41,20 +26,4 @@ body{
   opacity: 0;
   transition: all 1s;
   // animation: slideOutDown 2s ease;
-}
-@media only screen and (max-width:800px) {
-  .section-title {
-      color: #ccd6f6;
-      margin: 0;
-      display: flex;
-      align-items: center;
-      &::after {
-        content: "";
-        display: block;
-        width: 100%;
-        height: 1px;
-        margin: 0 10px;
-        background-color: #8892b0;
-      }
-    }
 }

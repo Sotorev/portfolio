@@ -3,16 +3,14 @@ import './index.scss'
 import data from '../../projects-data'
 import Project from "./Project";
 import { useInView } from 'react-intersection-observer';
+import SectionTitle from '../SectionTitle';
 const Projects = () => {
 	const [ref, inView, entry] = useInView({ threshold: 0.3, triggerOnce: true });
 	return (
 		<section ref={ref} className="projects-section" id="work">
-			<div className={inView ? "section-title show" : "section-title hidden"}>
-				<AnimatedLetters
-					letterClass={'blast-section'}
-					isLoaded={true}
-					strArray={Array.from("SomeThingsI’veBuilt.")}
-					idx={0}
+			<div className={inView ? 'show' : 'hidden'}>
+				<SectionTitle
+					text="Projects"
 				/>
 			</div>
 			<Project
