@@ -2,13 +2,22 @@
 * {
   box-sizing: border-box;
 }
+
+@font-face {
+  font-family: 'Mona Sans';
+  src:
+    url('./assets/fonts/Mona-Sans.woff2') format('woff2 supports variations'),
+    url('./assets/fonts/Mona-Sans.woff2') format('woff2-variations');
+  font-weight: 200 900;
+  font-stretch: 75% 125%;
+}
+
 html{
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
 body {
   margin: 0;
-  font-family: 'Helvetica Neue', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

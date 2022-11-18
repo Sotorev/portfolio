@@ -1,7 +1,11 @@
 import './index.scss';
 import { useInView } from 'react-intersection-observer';
 import SectionTitle from '../SectionTitle';
-
+import IconPython from '../../assets/icons/python'
+import IconJavascript from '../../assets/icons/javascript';
+import IconTypescript from '../../assets/icons/typescript';
+import IconReact from '../../assets/icons/react';
+import PTool from '../PTool';
 
 const About = () => {
   const [ref, inView, entry] = useInView({ threshold: 0.3, triggerOnce: true});
@@ -27,13 +31,25 @@ const About = () => {
             <br />
             Here are a few technologies I’ve been working with recently:
           </p>
-          <ul>
-            <li>Javascript (ES6+)</li>
-            <li>React</li>
-            <li>Python</li>
-            <li>Typescript</li>
-          </ul>
         </div>
+        <ul className='tech-list'>
+          <PTool
+            Icon={IconReact}
+            name={"ReactJS"}
+          />
+          <PTool
+            Icon={IconJavascript}
+            name={"Javascript (ES6+)"}
+          />
+          <PTool
+            Icon={IconTypescript}
+            name={"Typescript"}
+          />
+          <PTool
+            Icon={IconPython}
+            name={"Python"}
+          />
+        </ul>
       </div>
     </section>
   )

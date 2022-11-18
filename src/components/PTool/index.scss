@@ -1,0 +1,40 @@
+.ptool{
+	box-shadow: 0 10px 5px rgba(0, 0, 0, 0.281);
+	height: 150px;
+	width: 100%;
+	background-color: #24292f;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	border: 1px solid black;
+	svg{
+		width: 64px;
+		margin-top: 10%;
+	}
+	h4{
+		font-weight: normal;
+		color: white;
+		font-size: small;
+	}
+	&:hover{
+		box-shadow: 0 0 0 1px #5f4ca386, 0 10px 15px 5px #93f5eb27, 0 10px 25px 10px #93f5eb11;
+	}
+}
+@media only screen and (max-width: 1200px) {
+	.ptool{
+		height: 100px;
+		flex-direction: row;
+		justify-content: flex-start;
+		svg{
+			margin: 0;
+			margin-left: 3%;
+		}
+		h4{
+			margin: 0;
+			margin-left: 3%;
+			
+		}
+	}
+}
