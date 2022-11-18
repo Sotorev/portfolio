@@ -72,7 +72,7 @@ $text-color: rgb(228, 227, 227);
     }
 
     &:hover {
-      color: #05AFF2;
+      color: #A77BF3;
     }
   }
 }
@@ -183,7 +183,8 @@ $text-color: rgb(228, 227, 227);
       right: 0;
       top: 0;
       display: block;
-      background-color: #010e26;
+      background-color: rgba(0, 0, 0, 0.548);
+      backdrop-filter: blur(10px);
       height: 100vh ;
 
       nav {

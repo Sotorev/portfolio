@@ -1,11 +1,10 @@
 $text-color: #ccd6f6;
-
+$purple-theme: #A77BF3;
 .project {
 	// position: relative;
 	max-width: 1000px;
 	width: 100%;
 	margin: auto;
-	margin-top: 10rem;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	// grid-template-columns: 1fr 1fr;
@@ -13,18 +12,19 @@ $text-color: #ccd6f6;
 	.project-image {
 		position: relative;
 		z-index: 1;
-		border: 1px solid #05AFF2;
-		background-color: #05AFF2;
+		border: 1px solid #5f4ca3;
+		background-color: #93f5ec;
+		// background: linear-gradient(45deg, #93f5ec 20%, #a77bf3 70%);	
 		grid-area: 1 / 6 / -1 / -1;
 		border-radius: 10px;
 		overflow: hidden;
 		mix-blend-mode: screen;
-		transition: all 1s;
+		transition: all 2s;
 
 		&:hover {
 			mix-blend-mode: normal;
 			border: none;
-			background-color: transparent;
+			background: transparent;
 		}
 
 		// grid-column: 1 / 8;
@@ -56,7 +56,10 @@ $text-color: #ccd6f6;
 			a {
 				display: block;
 				margin-bottom: 2rem;
-				color: #05AFF2;
+				background: linear-gradient(300deg, #93f5ec 20%, #a77bf3 70%);
+				background-clip: text;
+				-webkit-background-clip: text;
+				color: transparent;
 				font-size: clamp(2rem, 2vw, 4rem);
 				font-weight: bold;
 				text-decoration: none;
@@ -65,11 +68,11 @@ $text-color: #ccd6f6;
 
 		.project-description {
 			// margin-top: 2rem;
-			box-shadow: 0 10px 20px -15px rgba(2, 12, 27, .7);
+			box-shadow: 0 10px 20px -15px rgba(147, 245, 235, 0.034);
 			transition: all .3s;
 			// width: 80%;
 			border-radius: 5px;
-			background-color: #0b2458;
+			background-color: #24292F;
 			padding: 25px;
 
 			p {
@@ -79,7 +82,7 @@ $text-color: #ccd6f6;
 			}
 
 			&:hover {
-				box-shadow: 0 20px 20px -15px rgba(2, 12, 27, .7);
+				box-shadow: 0 20px 20px -15px rgba(147, 245, 235, 0.116);
 			}
 		}
 
@@ -116,10 +119,10 @@ $text-color: #ccd6f6;
 			height: 100%;
 			max-width: 700px;
 			grid-area: 1 / 1 / -1/ -1;
-			background-color: #0b2458;
+			background-color: #2e2a3f;
 
 			img {
-				filter: none;
+				filter: grayscale(50%);
 				aspect-ratio: unset;
 			}
 		}
@@ -137,6 +140,7 @@ $text-color: #ccd6f6;
 			.project-title {
 				margin: 0;
 				a{
+				color: white;
 					&::before{
 						content: "";
 						z-index: 5;
