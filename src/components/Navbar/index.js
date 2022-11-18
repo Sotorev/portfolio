@@ -51,13 +51,13 @@ export default function Navbar() {
             <li className='text_animate _1'>
               <a href='#about'>About</a>
             </li>
-            <li className='text_animate _2'>
+            {/* <li className='text_animate _2'>
               <a href='#experience'>Experience</a>
-            </li>
-            <li className='text_animate _3'>
+            </li> */}
+            <li className='text_animate _2'>
               <a href='#work'>Work</a>
             </li>
-            <li className='text_animate _4'>
+            <li className='text_animate _3'>
               <a href='#contact'>Contact</a>
             </li>
           </ul>

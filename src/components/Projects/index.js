@@ -1,4 +1,3 @@
-import AnimatedLetters from '../AnimatedLetters/'
 import './index.scss'
 import data from '../../projects-data'
 import Project from "./Project";
@@ -13,14 +12,21 @@ const Projects = () => {
 					text="Projects"
 				/>
 			</div>
-			<Project
-				name={data.rm.name}
-				description={data.rm.description}
-				img={data.rm.image}
-				url={data.rm.url}
-				tools={data.rm.buildingTools}
-			/>
-		</section>	
+			<ul>
+				{
+					data.map((project, idx) => 
+						<Project
+								key={idx}
+								name={project.name}
+								description={project.description}
+								img={project.image}
+								url={project.url}
+								tools={project.buildingTools}
+						/>
+					)
+				}
+			</ul>
+		</section>
 	);
 }
 

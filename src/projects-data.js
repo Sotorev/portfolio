@@ -1,6 +1,6 @@
 import rmImage from "./assets/images/projects/rickandmorty.png"
-export default {
-	rm: {
+const data = [
+	{
 		name: "Rick and morty",
 		image: rmImage,
 		description: `This is a Rick and Morty AdultSwim's series project.
@@ -12,4 +12,5 @@ export default {
 			"React", "React Router", "Styled Components", "Serie Api"
 		]
 	},
-}
+];
+export default data;

@@ -31,13 +31,9 @@ const About = () => {
             <li>Javascript (ES6+)</li>
             <li>React</li>
             <li>Python</li>
-            {/* <li>Django</li> */}
+            <li>Typescript</li>
           </ul>
         </div>
-
-        {/* <div className='profile-pic wrapper'>
-          <img src={imageProfile} alt='my-profile' />
-        </div> */}
       </div>
     </section>
   )

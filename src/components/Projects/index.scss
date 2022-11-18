@@ -4,6 +4,9 @@
 	padding: 100px 150px;
 	max-width: 1600px;
 	min-height: 100vh;
+	ul{
+		padding: 0;
+	}
 }
 @media only screen and (max-width: 1200px){
 	.projects-section{

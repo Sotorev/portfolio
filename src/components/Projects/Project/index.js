@@ -3,7 +3,7 @@ import './index.scss'
 const Project = ({ img, name, url, description, tools }) => {
 	const [ref, inView, entry] = useInView();
 	return (
-		<article ref={ref} className="project">
+		<li ref={ref} className="project">
 			<div className="project-content">
 				<h3 className='project-title'>
 					<a href={url} target="_blank">{name}</a>
@@ -20,7 +20,7 @@ const Project = ({ img, name, url, description, tools }) => {
 			<a className='project-image' href={url} target="_blank">
 				<img src={img} />
 			</a>
-		</article>
+		</li>
 	);
 }
 export default Project;

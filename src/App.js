@@ -20,7 +20,7 @@ function App() {
       <Rightside />
       <Hero />
       <About />
-      <Experience/>
+      {/* <Experience/>  */}
       <Projects/>
       <Contact />
     </div>
