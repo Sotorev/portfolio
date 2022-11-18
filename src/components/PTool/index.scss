@@ -19,8 +19,11 @@
 		font-size: small;
 	}
 	&:hover{
-		box-shadow: 0 0 0 1px #5f4ca386, 0 10px 15px 5px #93f5eb27, 0 10px 25px 10px #93f5eb11;
+		box-shadow: 0 0 0 1px #a77bf32a inset, 0 10px 15px 5px #93f5eb15, 0 10px 25px 10px #93f5eb11;
+		transform: translateY(-10px);
+		
 	}
+		transition: all .3s ease-in-out;
 }
 @media only screen and (max-width: 1200px) {
 	.ptool{
