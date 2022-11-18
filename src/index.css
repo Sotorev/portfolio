@@ -32,15 +32,15 @@ code {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #041638;
+  background: #a77bf37a;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #055BA6;
+  background: #A77BF3;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #0476D9;
+  background: #8e53f5;
 }

@@ -2,7 +2,7 @@
     color: #ccd6f6;
     display: inline-block;
     min-width: 10px;
-    transition: all 300ms ease-out;
+    transition: all 300ms ease-in-out;
 }
 .bounce{
     opacity: 0;
@@ -23,10 +23,10 @@
     
 
 }
-@for $i from 0 through 53{
+@for $i from 0 through 36{
     .blast._#{$i}{
         animation-delay: #{$i/15}s;
-        animation-timing-function: cubic-bezier(0.23, 1, 0.320, 1);
+        animation-timing-function: ease-in-out;
     }
 }
 //Make unselect elements
