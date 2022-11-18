@@ -16,7 +16,7 @@ const Hero = () => {
     setTimeout(() => {
           setIsLoaded(true);
           setLetterClass("blast")
-        }, 2500);
+        }, 3500);
   }, [])
   return (
     <div className='hero'>
