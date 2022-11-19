@@ -35,7 +35,7 @@ const About = () => {
         <ul className='tech-list'>
           <PTool
             Icon={IconReact}
-            name={"ReactJS"}
+            name={"React"}
           />
           <PTool
             Icon={IconJavascript}

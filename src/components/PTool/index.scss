@@ -1,4 +1,20 @@
-.ptool{
+.ptool {
+	&:nth-child(1) {
+		transition-delay: 100ms;
+	}
+
+	&:nth-child(2) {
+		transition-delay: 200ms;
+	}
+
+	&:nth-child(3) {
+		transition-delay: 300ms;
+	}
+
+	&:nth-child(4) {
+		transition-delay: 400ms;
+	}
+
 	box-shadow: 0 10px 5px rgba(0, 0, 0, 0.281);
 	height: 150px;
 	width: 100%;
@@ -9,35 +25,52 @@
 	justify-content: center;
 	border-radius: 10px;
 	border: 1px solid black;
-	svg{
+
+	svg {
 		width: 64px;
 		margin-top: 10%;
 	}
-	h4{
+
+	h4 {
 		font-weight: normal;
 		color: white;
 		font-size: small;
 	}
-	&:hover{
+
+	&:hover {
 		box-shadow: 0 0 0 1px #a77bf32a inset, 0 10px 15px 5px #93f5eb15, 0 10px 25px 10px #93f5eb11;
 		transform: translateY(-10px);
-		
+
 	}
-		transition: all .3s ease-in-out;
+
+	transition: all .3s ease-in-out;
+}
+.ptool.hidden {
+	transform: translateX(-10%);
+	opacity: 0;
+	transition: all 0s;
+	transition-delay: 0;
+}
+
+.ptool.show {
+	transform: translateX(0);
+	opacity: 1;
 }
 @media only screen and (max-width: 1200px) {
-	.ptool{
+	.ptool {
 		height: 100px;
 		flex-direction: row;
 		justify-content: flex-start;
-		svg{
+
+		svg {
 			margin: 0;
 			margin-left: 3%;
 		}
-		h4{
+
+		h4 {
 			margin: 0;
 			margin-left: 3%;
-			
+
 		}
 	}
 }

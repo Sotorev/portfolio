@@ -4,24 +4,27 @@
 	padding: 100px 150px;
 	max-width: 1600px;
 	min-height: 100vh;
-	ul{
+
+	ul {
 		margin: 0;
 		padding: 0;
 	}
-		.show-project-animation {
-			opacity: 1;
-			transform: translateY(0);
-			transition: all .5s ease-in;
-		}
-	
-		.hide-project-animation {
-			opacity: 0;
-			transform: translateY(20%);
-			transition: all .5s;
-		}
+
+	.show-project-animation {
+		opacity: 1;
+		transform: translateY(0);
+		transition: all .5s ease-in;
+	}
+
+	.hide-project-animation {
+		opacity: 0;
+		transform: translateY(20%);
+		transition: all .5s;
+	}
 }
-@media only screen and (max-width: 1200px){
-	.projects-section{
+
+@media only screen and (max-width: 1200px) {
+	.projects-section {
 		min-height: 0;
 		padding: 60px 3rem;
 	}

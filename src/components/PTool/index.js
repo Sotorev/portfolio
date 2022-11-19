@@ -1,8 +1,11 @@
+import { useInView } from 'react-intersection-observer';
 import './index.scss'
 
 export default function PTool({ Icon, name }) {
+	const [ref, inView, entry] = useInView({ threshold: 0.3, triggerOnce: false });
+
 	return (
-		<li className="ptool">
+		<li className={inView ? 'ptool show' : 'ptool hidden'} ref={ref}>
 			{<Icon />}
 			<h4>{name}</h4>
 		</li>

@@ -7,7 +7,10 @@
 	h2{
 		text-align: center;
 		font-size: clamp(2rem, 10vw, 6rem);
-		color:#ccd6f6;
+		background: linear-gradient(300deg, #93f5ec 20%, #a77bf3 70%);
+		background-clip: text;
+		-webkit-background-clip: text;
+		color: transparent;
 	}
 	a{
 		cursor: pointer;
