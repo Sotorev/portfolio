@@ -8,7 +8,10 @@ $purple-theme: #A77BF3;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
 	// grid-template-columns: 1fr 1fr;
-
+	transition: all 0.2s cubic-bezier(1, 0, 0, 1);
+	&:hover{
+		transform: scale(101%);
+	}
 	.project-image {
 		position: relative;
 		z-index: 1;

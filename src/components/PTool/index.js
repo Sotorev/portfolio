@@ -6,8 +6,12 @@ export default function PTool({ Icon, name }) {
 
 	return (
 		<li className={inView ? 'ptool show' : 'ptool hidden'} ref={ref}>
-			{<Icon />}
-			<h4>{name}</h4>
+			<div className='container'>
+				{<Icon />}
+				<h4>{name}</h4>
+				
+			</div>
+			<div className='glow'></div>
 		</li>
 	);
 }

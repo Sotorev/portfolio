@@ -8,19 +8,17 @@ import IconReact from '../../assets/icons/react';
 import PTool from '../PTool';
 
 const About = () => {
-  const [ref, inView, entry] = useInView({ threshold: 0.3, triggerOnce: true});
+  const [ref, inView, entry] = useInView({ threshold: [0.3], triggerOnce: false });
   return (
     <section ref={ref} className='about' id='about'>
-      
-      <div className={inView ? 'show' : 'hidden'}>
-        <SectionTitle
-          text="About"
-        />
-      </div>
-      
-      <div className={inView ? 'about-info show' : 'about-info hidden'}>
+      <SectionTitle
+        text="About"
+        inView={inView}
+        animationStr="slide"
+      />
+      <div className={inView ? 'about-info' : 'about-info'}>
         <div className='text about-text'>
-          <p >
+          <p className={inView ? 'show' : 'hidden'}>
             Hello!, My name is Manuel and I enjoy creating things
             that live on the internet. My interest in web development
             started back in 2018 when I decided to try creating fandom webpages.

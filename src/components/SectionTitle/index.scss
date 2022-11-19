@@ -1,3 +1,21 @@
 .section-title{
 	font-size: clamp(2.5rem, 2vw, 4rem);
+	transition: all .5s ease-in-out;
+	margin: 0;
+}
+.section-title.show{
+	transform: translate(0 0);
+	opacity: 1;
+}
+.section-title.hidden-slide {
+	transform: translateX(-3%);
+	opacity: 0;
+	transition: all 0s;
+	transition-delay: 0;
+}
+.section-title.hidden-fadeUp {
+	transform: translateY(100px);
+	opacity: 0;
+	transition: all 0s;
+	transition-delay: 0;
 }
