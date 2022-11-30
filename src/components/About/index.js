@@ -5,6 +5,7 @@ import IconPython from '../../assets/icons/python'
 import IconJavascript from '../../assets/icons/javascript';
 import IconTypescript from '../../assets/icons/typescript';
 import IconReact from '../../assets/icons/react';
+import IconStyledComponents from '../../assets/icons/styledcomponents';
 import PTool from '../PTool';
 
 const About = () => {
@@ -46,6 +47,10 @@ const About = () => {
           <PTool
             Icon={IconPython}
             name={"Python"}
+          />
+          <PTool
+            Icon={IconStyledComponents}
+            name={"Styled components"}
           />
         </ul>
       </div>

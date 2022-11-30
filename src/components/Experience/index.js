@@ -5,16 +5,16 @@ const Experience = () => {
 	const [ref, inView, entry] = useInView({ threshold: .3, triggerOnce: true });
 	return (
 		<section ref={ref} id="experience" className="experience">
-			<div className={inView ? 'show' : 'hidden'}>
-				<SectionTitle
-					text="Experience"
-				/>
-			</div>
+			<SectionTitle
+				text="Experience"
+				inView={inView}
+				animationStr={"fadeUp"}
+			/>
 			<div className={inView ? 'experience-content show' : 'experience-content hidden'}>
-        <ul>
-          <li>Free lancer Web developer 2021-2022</li>
-        </ul>
-      </div>
+				<ul>
+					<li>Free lancer Web developer 2021-2022</li>
+				</ul>
+			</div>
 		</section>
 	)
 }
